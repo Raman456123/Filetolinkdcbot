@@ -44,13 +44,13 @@ async def login_handler(c: Client, m: Message):
             else:
                 return
         except TimeoutError:
-            await ag.edit("I can't wait more for password, try again, request it from @DcStreambot")
+            await ag.edit("I can't wait more for password, try again, request it from @Pravinboopathi_contactbot")
             return
         if textp == MY_PASS:
             await pass_db.add_user_pass(m.chat.id, textp)
             ag_text = "yeah! you entered the password correctly. Enjoy Your Life 😜"
         else:
-            ag_text = "Wrong password, try again, request it from @DcStreambot"
+            ag_text = "Wrong password, try again, request it from @Pravinboopathi_contactbot"
         await ag.edit(ag_text)
     except Exception as e:
         print(e)
@@ -60,7 +60,7 @@ async def private_receive_handler(c: Client, m: Message):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(m.chat.id)
         if check_pass== None:
-            await m.reply_text("Login first using /login cmd \nDon't know the password contact request it from @DcStreambot")
+            await m.reply_text("Login first using /login cmd \nDon't know the password contact request it from @pravinboopathi_contactot")
             return
         if check_pass != MY_PASS:
             await pass_db.delete_user(m.chat.id)
@@ -108,9 +108,9 @@ async def private_receive_handler(c: Client, m: Message):
 
         log_msg = await m.forward(chat_id=Var.BIN_CHANNEL)
         stream_link = f"{Var.URL}watch/{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        stream_linkk = f"https://linksearn.site/st?api={Var.API}&url={stream_link}"
+        stream_linkk = f"https://url.mysteryfacts.xyz/st?api={Var.API}&url={stream_link}"
         
-        online_link = f"https://linksearn.site/st?api={Var.API}&url={Var.URL}{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        online_link = f"https://url.mysteryfacts.xyz/st?api={Var.API}&url={Var.URL}{str(log_msg.message_id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_linkkk = get_shortlink(online_link)
 
 #short link support added ✅
