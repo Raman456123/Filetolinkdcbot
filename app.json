@@ -57,6 +57,10 @@
           "required": false
           
       },
+   "TRACK_CHANNEL": {
+      "description": "Create new private/public channel and get it's id, startswith -100",
+      
+    },
       "OWNER_USERNAME": {
           "description": "Enter your username without @  example  adarsh."
       },
