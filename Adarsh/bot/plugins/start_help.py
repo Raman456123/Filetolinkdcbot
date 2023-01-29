@@ -63,7 +63,7 @@ async def start(b, m):
                    InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
                    InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
                 ],        
-                [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url='https://t.me/zeusbotsnetwork'),
+                [InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url='https://t.me/uploaddisk'),
                  InlineKeyboardButton("ʀᴇᴘᴏ", url='https://github.com/Selfie-bd/Filetolinkdcbot')]
                 ]
             ),
@@ -242,10 +242,10 @@ async def about_handler(bot, message):
 <b>╭━━━━━━━〔File To Link〕</b>
 ┃
 ┣⪼<b>⚜ My Name : File To Link Bot</b>
-┣⪼<b>⚜ Update : @{Var.UPDATES_CHANNEL}</b>
+┣⪼<b>⚜ Update : @UploadDisk</b>
 ┣⪼<b>🔸Version : 3.1.2</b>
-┣⪼<b>🔹Last Updated : [ 21-aug-22 ]</b>
-┣⪼<b>✨YouTube Channel: <a href='https://youtube.com/channel/UCP4tsCLaLmJACqJJImknF8g'>Groupdcbots Channel</a></b>
+┣⪼<b>🔹Last Updated : [ 29-Jan-23 ]</b>
+┣⪼<b>✨Movie Channel: <a href='https://t.me/cinemadudes1'>Cinema Dudes</a></b>
 ┃
 <b>╰━━━━━━━〔THANK YOU〕</b>""",
   parse_mode="html",
